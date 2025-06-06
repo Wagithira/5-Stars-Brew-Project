@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5 STARS BREW - Your Perfect Escape</title>
+    <link rel="stylesheet" href="styles.css">  
+  </head>
+
+  <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const questions = document.querySelectorAll(".faq-question");
+
+    questions.forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const answer = btn.nextElementSibling;
+        answer.classList.toggle("show");
+
+        
+        questions.forEach((otherBtn) => {
+          if (otherBtn !== btn) {
+            otherBtn.nextElementSibling.classList.remove("show");
+          }
+        });
+      });
+    });
+  });
+</script>
+
+<body>
+
+    <header>
+        <div class="container">
+           
+            <nav>
+                <ul>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#menu">Our Menu</a></li>
+
+                     <h1>5 STARS BREW</h1> 
+
+                    <li><a href="#books">Books & Events</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#contact">Contact & Visit</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="hero-section">
+            <div class="container">
+                <h2>Where Every Page Meets Its Perfect Pair.</h2>
+                <p>Indulge in rich coffee, delectable treats, and a world of stories.</p>
+                <a href="#menu" class="btn">Explore Our Brews & Books</a>
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <div class="container">
+                <h2>About 5 STARS BREW</h2>
+                <p>Welcome to <strong>5 STARS BREW</strong>, more than just a cafe – it's a sanctuary for storytellers,<br> thinkers, and anyone seeking solace in the pages of a good book. <br>Born from a love for both exceptional coffee and captivating narratives, we've created<br> a cozy haven where you can escape the everyday.</p>
+                <p>Our mission is simple: to provide a space where the aroma of freshly brewed coffee <br>mingles with the scent of new and old books, fostering a community of readers and dreamers. <br> you're here to dive into a thrilling novel, catch up on work, or simply unwind with a latte,<br> you'll find your perfect spot at 5 STARS BREW.</p>
+                </div>
+
+            <div class="image-grid">
+    <img src="images/Background coffee image.png" class="faded" alt="Background coffee image ">
+    
+</div>
+        </section>
+
+        <section id="menu" class="menu-section">
+            <div class="container">
+                <h2>Our Menu</h2>
+                <div class="menu-categories">
+                    <div class="category">
+                        <h3>Signature Coffees</h3>
+                        <ul>
+                            <li><strong>The Page-Turner Espresso:</strong> A bold, invigorating shot to kickstart your literary adventure.</li>
+                            <li><strong>Chapter Latte:</strong> Smooth espresso with steamed milk, customizable with vanilla, caramel, or hazelnut.</li>
+                            <li><strong>Novel Mocha:</strong> Rich chocolate, espresso, and milk, a comforting classic.</li>
+                            <li><strong>Brewed Awakening:</strong> Our daily filter coffee, perfectly balanced for your morning read.</li>
+                            <li><strong>Iced Story Cold Brew:</strong> Slowly steeped for 16 hours, incredibly smooth and refreshing.</li>
+                        </ul>
+                    </div>
+                    <div class="category">
+                        <h3>Tea & Other Sips</h3>
+                        <ul>
+                            <li><strong>Literary Chai Latte:</strong> Spiced black tea with steamed milk, a warm embrace.</li>
+                            <li><strong>Herbal Infusions:</strong> A selection of soothing herbal teas – Peppermint, Chamomile, Green Tea.</li>
+                            <li><strong>Freshly Squeezed Juices:</strong> Orange, Apple, and our "Berry Good Read" blend.</li>
+                            <li><strong>Sparkling Water & Sodas:</strong> For a crisp refreshment.</li>
+                        </ul>
+                    </div>
+                    <div class="category">
+                        <h3>Sweet & Savory Bites</h3>
+                        <ul>
+                            <li><strong>Editor's Choice Croissant:</strong> Flaky, buttery, and perfect with any coffee.</li>
+                            <li><strong>Plot Twist Muffin:</strong> Daily changing flavors (blueberry, chocolate chip, banana nut).</li>
+                            <li><strong>The Author's Scone:</strong> Served with clotted cream and jam.</li>
+                            <li><strong>Bookmark Brownie:</strong> Rich, fudgy, and intensely chocolatey.</li>
+                            <li><strong>Panini & Wraps:</strong> A selection of freshly made sandwiches for a quick bite (e.g., "Classic Club," "Veggie Delight").</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="books" class="books-events-section">
+            <div class="container">
+                <h2>Books & Events</h2>
+                <div class="content-row">
+                    <div class="column">
+                        <h3>Our Curated Collection</h3>
+                        <p>At 5 STARS BREW, our shelves are thoughtfully stocked with a diverse range of genres. From thrilling mysteries and heartwarming romances to insightful non-fiction and captivating biographies, you're sure to find your next great read. We also feature a selection of local authors and independent publishers.</p>
+                        <p>Feel free to browse, read a few pages while enjoying your coffee, or purchase a new addition to your home library. We believe in the power of stories to connect and inspire.</p>
+                        </div>
+                    <div class="column">
+                        <h3>Upcoming Events</h3>
+                        <p>We love fostering a vibrant community around books! Join us for:</p>
+                        <ul>
+                            <li><strong>Monthly Book Club:</strong> Discuss our latest pick over coffee and good company. Check our social media for this month's title and date!</li>
+                            <li><strong>Author Meet & Greets:</strong> Hear from your favorite local authors and discover new voices.</li>
+                            <li><strong>Open Mic Poetry Nights:</strong> Share your verses or simply enjoy the spoken word.</li>
+                            <li><strong>Storytime for Little Readers:</strong> Special sessions for children and their guardians.</li>
+                        </ul>
+                        <p>Follow us on social media or check our "Events" page for the latest schedule!</p>
+                        </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="gallery" class="gallery-section">
+            <div class="container">
+                <h2>Gallery</h2>
+                <p>A glimpse into the cozy corners and delightful moments at 5 STARS BREW.</p>
+                <div class="image-grid">
+    <img src="images/cozy seating area.jpeg" alt="Cozy seating area with armchairs and books">
+    <img src="images/latte art.jpeg" alt="Close-up of a coffee cup with latte art">
+    <img src="images/Book shelf.jpeg" alt="Well-stocked bookshelf in the cafe">
+    <img src="images/delicious pastries.jpeg" alt="Assortment of fresh pastries on display">
+    <img src="images/person reading in a corner.jpeg" alt="A person quietly reading a book in a sunlit corner">
+    <img src="images/exterior of a cafe.jpeg" alt="Exterior view of 5 STARS BREW book cafe">
+</div>
+            </div>
+        </section>
+
+    <section id="testimonials">
+        <h2>Trusted by our clients</h2>
+        
+        <div class="testimonials-container">
+            <div class="testimonial-card">
+                <h3>Jane M.</h3>
+                <p class="stars">★★★★★</p>
+                <p>"Absolutely love the cozy vibes and the coffee is perfection. A reader's paradise!"</p>
+            </div>
+            
+            <div class="testimonial-card">
+                <h3>David K.</h3>
+                <p class="stars">★★★★★</p>
+                <p>"The best place to unwind with a cappuccino and a good novel. Staff is super friendly!"</p>
+            </div>
+            
+            <div class="testimonial-card">
+                <h3>Priya S.</h3>
+                <p class="stars">★★★★★</p>
+                <p>"Their signature brew is divine. I keep coming back for the peaceful ambiance."</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="partners">
+        <h2>Our Trusted Partners</h2>
+        
+        <div class="partners-container">
+            <div class="partner-card">
+                <img>
+                <p>StarBeans Coffee</p>
+            </div>
+            
+            <div class="partner-card">
+                <img>
+                <p>Readers' Corner</p>
+            </div>
+            
+            <div class="partner-card">
+                <img>
+                <p>FreshRoast Supply Co.</p>
+            </div>
+            
+            <div class="partner-card">
+                <img>
+                <p>BookLink Distributors</p>
+            </div>
+        </div>
+    </section>
+
+
+<section id="faqs" class="faqs-section">
+  <div class="container">
+  <h2>Frequently Asked Questions</h2>
+    <div class="faq-column">
+
+  <div class="faq-item">
+    <button class="faq-question">What are your opening hours?</button>
+    <div class="faq-answer">
+      <p>We’re open daily from 8:00 AM to 9:00 PM, including weekends and holidays.</p>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question">Do you offer free Wi-Fi?</button>
+    <div class="faq-answer">
+      <p>Yes! Free high-speed Wi-Fi is available to all our customers—just <br>ask for the password at the counter.</p>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question">Can I read books without purchasing them?</button>
+    <div class="faq-answer">
+      <p>Absolutely. You're welcome to browse and read any of the books on <br>our shelves while enjoying your time here.</p>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question">Do you sell books?</button>
+    <div class="faq-answer">
+      <p>Yes, we have a curated selection of books available for purchase.<br> Just look for titles marked with a “For Sale” tag.</p>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question">Are pets allowed?</button>
+    <div class="faq-answer">
+      <p>We love furry friends! Well-behaved pets are welcome on our <br>outdoor patio.</p>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question">Do you offer dairy-free or vegan options?</button>
+    <div class="faq-answer">
+      <p>Yes! We have a variety of plant-based milk options and <br>vegan-friendly snacks and pastries.</p>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question">Can I reserve a table or space for a group<br> study or book club?</button>
+    <div class="faq-answer">
+      <p>Yes, we offer table reservations for groups. Please <br> contact us in advance via our booking form or call us directly.</p>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+
+<div class="image-column">
+    <img src="images/coffee cup.jpg.jpeg" class="faded" alt="images/coffee cup.jpg.jpeg">
+    
+</div>
+</div>
+
+</section>
+
+
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <h2>Contact & Visit Us</h2>
+                <div class="contact-info">
+                    <div class="location-hours">
+                        <h3>Location</h3>
+                        <p>Along Thika super highway ,TRM ,Roysambu 00609</p>
+                        <p>Near the TRM.</p>
+                        <h3>Hours of Operation</h3>
+                        <p>Monday - Friday: 8:00 AM - 7:00 PM</p>
+                        <p>Saturday: 9:00 AM - 8:00 PM</p>
+                        <p>Sunday: 10:00 AM - 6:00 PM</p>
+                        <p>Public Holidays: Check our social media for adjusted hours.</p>
+                    </div>
+                    <div class="get-in-touch">
+                        <h3>Get In Touch</h3>
+                        <p>Phone: <a href="tel:+2540759694529">(254) 596-945-29</a></p>
+                        <p>Email: <a href="mailto:info@5starsbrew.com">info@5starsbrew.com</a></p>
+                        <p>For event inquiries: <a href="mailto:events@5starsbrew.com">events@5starsbrew.com</a></p>
+
+                        <h3>Follow Us</h3>
+                        <div class="social-links">
+                            <a href="https://facebook.com/5starsbrew" target="_blank">Facebook</a> |
+                            <a href="https://instagram.com/5starsbrew" target="_blank">Instagram</a> |
+                            <a href="https://twitter.com/5starsbrew" target="_blank">Twitter</a>
+                        </div>
+                    </div>
+                </div>
+
+                <h3>Send Us a Message</h3>
+                <form class="contact-form" action="submit_form.php" method="POST"> <div class="form-group">
+                        <label for="name">Your Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Your Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject:</label>
+                        <input type="text" id="subject" name="subject">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="currentYear"></span> 5 STARS BREW. All rights reserved.</p>
+            <p>Designed with love for books and coffee.</p>
+        </div>
+    </footer>
+
+   </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
